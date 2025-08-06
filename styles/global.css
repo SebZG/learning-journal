@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.logo-wrapper i {
+    font-size: 1.75em;
+}
+
+.logo-wrapper p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #202020;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer .footer-name {
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer .footer-copyright {
+    color: #D7D7D7;
+    font-size: 12px;
+    font-weight: 400;
+}
