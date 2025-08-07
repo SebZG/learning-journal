@@ -1,0 +1,70 @@
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "l l l l l l l l l l l l"
+        ". . . . . . . . . . . ."
+        ". o o o o o o o o o o ."
+        ". . . . . . . . . . . .";
+    gap: 2em 0;
+}
+
+/* LATEST POST */
+
+.latest-post {
+    grid-area: l;
+    background-image: url("/images/blog-image-hero.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 488px;
+
+    color: whitesmoke;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: end;
+    padding: 3em 0;
+}
+
+.latest-post-info-wrapper {
+    grid-column: 2 / 9;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /* max-width: 600px; */
+}
+
+/* OLDER POSTS */
+
+.older-posts {
+    grid-area: o;
+}
+
+.older-posts-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 392px;
+    gap: 1.5em;
+}
+
+.older-posts-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-view-more {
+    display: block;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 3em;
+
+    font-size: 1rem;
+    font-weight: 700;
+}

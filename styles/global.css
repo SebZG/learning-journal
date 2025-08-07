@@ -1,3 +1,5 @@
+/* DEFAULTS */
+
 *,
 *::before,
 *::after {
@@ -8,6 +10,33 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: whitesmoke;
+
+}
+
+/* LAYOUT */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". h h h h h h h h h h ."
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+    gap: 1rem;
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
 }
 
 /* HEADER */
@@ -15,7 +44,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    /* padding: 1.5em 3em; */
 }
 
 .logo-wrapper {
@@ -35,7 +64,7 @@ header {
 
 header ul {
     display: flex;
-    gap: 1rem;
+    gap: 2em;
 
     list-style-type: none;
 }
@@ -45,11 +74,21 @@ header ul li a {
     font-weight: 600;
 }
 
+/* MAIN */
+
+.btn-view-more {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* FOOTER */
 
 footer {
     background-color: #202020;
-    padding: 1.5rem;
+    padding: 1.5em;
     text-align: center;
 }
 
