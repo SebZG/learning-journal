@@ -44,6 +44,7 @@ footer {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* padding: 1.5em 3em; */
 }
 
@@ -74,15 +75,6 @@ header ul li a {
     font-weight: 600;
 }
 
-/* MAIN */
-
-.btn-view-more {
-    margin: 0 auto;
-    background-color: whitesmoke;
-    border: none;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 /* FOOTER */
 

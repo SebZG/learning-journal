@@ -15,7 +15,7 @@ main {
 
 .latest-post {
     grid-area: l;
-    background-image: url("/images/blog-image-hero.png");
+    /* background-image: url("/images/blog-image-hero.png"); */
     background-size: cover;
     background-position: center;
     min-height: 488px;
@@ -45,8 +45,8 @@ main {
 .older-posts-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 392px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1.5em;
 }
 
@@ -54,6 +54,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.older-posts-info-wrapper img {
+    width: 100%;
+    height: 232px;
+    object-fit: cover;
+    /* object-position: center; */
 }
 
 .btn-view-more {
